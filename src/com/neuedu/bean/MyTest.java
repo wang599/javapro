@@ -10,5 +10,6 @@ public class MyTest {
     }
     public static void eat(){}
     public static void drink(){}
-    public static void talk(){}
+    public static void loudtalk(){}
+
 }
