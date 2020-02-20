@@ -27,6 +27,28 @@ public class MyTest2 {
         for(int a : array){
             System.out.println(a);
         }*/
+        int[] array = {1, 3, 5, 8, 34, 23, 45, 67};
+        for (int i = 0; i <= array.length - 1; i++) {
+            int flag = 0;
+            for (int j = 0; j < array.length - 1 - i; j++) {
+                if (array[j] > array[j + 1]) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                    flag++;
+                }
+            }
+            if(flag==0){
+                break;
+            }
+            for (int a : array) {
+                System.out.println(a);
+            }
+        }
+    }
+}
+
+
         /**
          *  选择排序
          * */
@@ -47,16 +69,16 @@ public class MyTest2 {
          *      在数组中快速查找元素的一种方式
          *      前提是 必须是有序的数组
          * */
-        int[] array = new int[100000];
+       /* int[] array = new int[100000];
         for (int i = 0; i < array.length; i++) {
             array[i] = i + 1;
         }
         int a = 80000;
         int index = search(array, a);
         System.out.println(index);
-    }
+    }*/
 
-    /*从array中找到value的索引 */
+    /*从array中找到value的索引
     public static int find(int[] array, int value) {
         int count = 0;
         for (int i = 0; i < array.length; i++) {
@@ -68,10 +90,10 @@ public class MyTest2 {
         }
 
         return -1;
-    }
+    }*/
 
 
-    /* 二分搜索查询 */
+    /* 二分搜索查询
     public static int search(int[] array, int value) {
         int min = 0;
         int max = array.length - 1;
@@ -92,6 +114,6 @@ public class MyTest2 {
         return -1;
     }
 
-    }
+    }*/
 
 
